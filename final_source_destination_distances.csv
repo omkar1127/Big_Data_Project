@@ -1,0 +1,114 @@
+source,destination,max_distance
+Back Bay,Boston University,1.78
+Back Bay,Fenway,1.71
+Back Bay,Haymarket Square,7.38
+Back Bay,North End,7.36
+Back Bay,Northeastern University,1.45
+Back Bay,South Station,6.27
+Beacon Hill,Boston University,2.44
+Beacon Hill,Fenway,2.55
+Beacon Hill,Haymarket Square,2.36
+Beacon Hill,North End,3.01
+Beacon Hill,Northeastern University,2.85
+Beacon Hill,South Station,2.7
+Boston University,Back Bay,2.56
+Boston University,Beacon Hill,3.23
+Boston University,Financial District,7.25
+Boston University,North Station,3.85
+Boston University,Theatre District,3.89
+Boston University,West End,3.73
+Fenway,Back Bay,1.82
+Fenway,Beacon Hill,3.55
+Fenway,Financial District,7.62
+Fenway,North Station,4.17
+Fenway,Theatre District,3.57
+Fenway,West End,3.85
+Financial District,Boston University,5.7
+Financial District,Fenway,6.83
+Financial District,Haymarket Square,1.34
+Financial District,North End,1.4
+Financial District,Northeastern University,7.46
+Financial District,South Station,1.74
+Haymarket Square,Back Bay,3.8
+Haymarket Square,Beacon Hill,2.85
+Haymarket Square,Financial District,1.36
+Haymarket Square,North Station,0.81
+Haymarket Square,Theatre District,2.12
+Haymarket Square,West End,0.93
+North End,Back Bay,3.81
+North End,Beacon Hill,3.27
+North End,Financial District,1.84
+North End,North Station,1.96
+North End,Theatre District,3.17
+North End,West End,2.32
+North Station,Boston University,3.41
+North Station,Fenway,3.39
+North Station,Haymarket Square,1.99
+North Station,North End,2.12
+North Station,Northeastern University,3.66
+North Station,South Station,3.47
+Northeastern University,Back Bay,1.67
+Northeastern University,Beacon Hill,3.1
+Northeastern University,Financial District,7.86
+Northeastern University,North Station,3.76
+Northeastern University,Theatre District,2.81
+Northeastern University,West End,3.56
+South Station,Back Bay,3.97
+South Station,Beacon Hill,3.53
+South Station,Financial District,1.6
+South Station,North Station,2.53
+South Station,Theatre District,2.32
+South Station,West End,2.88
+Theatre District,Boston University,5.46
+Theatre District,Fenway,4.82
+Theatre District,Haymarket Square,1.86
+Theatre District,North End,2.47
+Theatre District,Northeastern University,3.84
+Theatre District,South Station,1.68
+West End,Boston University,3.36
+West End,Fenway,3.49
+West End,Haymarket Square,2.03
+West End,North End,2.09
+West End,Northeastern University,3.89
+West End,South Station,3.51
+Back Bay,Beacon Hill,3.06
+Back Bay,North Station,4.34
+Back Bay,Theatre District,5.78
+Back Bay,West End,5.32
+Beacon Hill,Back Bay,4.9
+Beacon Hill,North Station,4.44
+Beacon Hill,Theatre District,3.34
+Beacon Hill,West End,7.21
+Boston University,Fenway,5.13
+Boston University,Haymarket Square,0.85
+Boston University,North End,3.22
+Boston University,Northeastern University,5.08
+Boston University,South Station,5.3
+Fenway,Haymarket Square,0.5
+Fenway,North End,0.55
+Fenway,Northeastern University,4.89
+Fenway,South Station,0.85
+Haymarket Square,Fenway,3.43
+Haymarket Square,North End,6.21
+Haymarket Square,Northeastern University,6.12
+Haymarket Square,South Station,6.31
+North End,Fenway,4.39
+North End,Haymarket Square,3.04
+North End,Northeastern University,3.76
+North End,South Station,0.58
+North Station,Beacon Hill,3.89
+North Station,Back Bay,3.25
+North Station,Theatre District,2.39
+North Station,West End,3.72
+South Station,Fenway,5.02
+South Station,Haymarket Square,2.51
+South Station,North End,7.41
+South Station,Northeastern University,4.13
+Theatre District,Beacon Hill,5.07
+Theatre District,Back Bay,7.72
+Theatre District,North Station,0.57
+Theatre District,West End,3.56
+West End,Beacon Hill,1.54
+West End,Back Bay,6.87
+West End,North Station,5.65
+West End,Theatre District,3.86
