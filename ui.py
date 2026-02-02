@@ -305,14 +305,6 @@ with tab1:
         with col2:
             st.markdown("#### 📍 Trip Parameters")
             
-            distance = st.number_input(
-                "Distance (miles)",
-                min_value=0.1,
-                max_value=50.0,
-                value=5.0,
-                step=0.1
-            )
-            
             st.markdown("#### 🕐 Time Details")
             
             col2a, col2b = st.columns(2)
