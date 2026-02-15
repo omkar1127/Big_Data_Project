@@ -125,6 +125,13 @@ Enables real-time fare prediction.
 
 ---
 
+📌 Features
+✅ End-to-end ML pipeline
+✅ Feature engineering automation
+✅ Real-time streaming prediction
+✅ Batch and streaming support
+✅ Modular architecture
+
 # 🛠️ How to Run
 
 ## 1️⃣ Train Model
@@ -139,9 +146,3 @@ python kafka_producer.py
 python kafka_consumer.py
 5️⃣ Run UI
 python app.py
-📌 Features
-✅ End-to-end ML pipeline
-✅ Feature engineering automation
-✅ Real-time streaming prediction
-✅ Batch and streaming support
-✅ Modular architecture
