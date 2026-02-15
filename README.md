@@ -23,7 +23,7 @@ The system consists of the following components:
 
 INPUT → PREPROCESSING → ML MODEL → SAVED MODEL USER → INTERFACE & KAFKA PIPELINE
 <br>
-(https://github.com/omkar1127/Big_Data_Project/blob/main/cab_price_architecture.png?raw=true)
+<img src="images/architecture.png](https://github.com/omkar1127/Big_Data_Project/blob/main/cab_price_architecture.png?raw=true)" width="600"/>
 <br>
 ---
 
