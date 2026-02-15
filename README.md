@@ -21,11 +21,10 @@ This project builds a **Cab Fare Prediction System** that:
 
 The system consists of the following components:
 
-INPUT → PREPROCESSING → ML MODEL → SAVED MODEL
-↓
-USER INTERFACE & KAFKA PIPELINE
-
-
+INPUT → PREPROCESSING → ML MODEL → SAVED MODEL USER → INTERFACE & KAFKA PIPELINE
+<br>
+(https://github.com/omkar1127/Big_Data_Project/blob/main/cab_price_architecture.png?raw=true)
+<br>
 ---
 
 # 📂 Project Pipeline
