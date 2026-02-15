@@ -1,80 +1,155 @@
-# 🚗 Real-Time Uber Fare Prediction System
+# 🚖 Cab Fare Prediction System
 
-# Cab Fare Prediction System
+An end-to-end Machine Learning pipeline for predicting cab fares using batch training and real-time streaming with Kafka.
 
-A real-time machine learning system for predicting cab fares using Apache Kafka streaming and a user-friendly interface.
+---
 
-## 🏗️ Architecture Overview
+## 📌 Project Overview
 
-This project implements an end-to-end ML pipeline with three main components:
-- **Batch Processing Pipeline**: Data preprocessing and model training
-- **Streaming Pipeline**: Real-time predictions using Kafka
-- **User Interface**: Interactive fare prediction interface
+This project builds a **Cab Fare Prediction System** that:
 
-## 📊 System Components
+- Cleans and preprocesses raw cab ride data
+- Trains a Linear Regression model
+- Evaluates performance (RMSE, MAE, R²)
+- Serves predictions via:
+  - User Interface (batch prediction)
+  - Kafka Streaming (real-time prediction)
 
-### 1. Data Preprocessing
+---
 
-#### Input
-- **Raw Data**: `cab_rides.csv`
+# 🏗️ Architecture Overview
 
-#### Processing Steps
-- **Data Cleaning**
-  - Remove null values
-  - Handle duplicates
-  
-- **Feature Engineering**
-  - DateTime extraction
-  - Derived features creation
-  - Encoding categorical variables
+The system consists of the following components:
 
-- **Pipeline Creation**
-  - Indexer
-  - Encoder
-  - VectorAssembler
-  - Scaler
+INPUT → PREPROCESSING → ML MODEL → SAVED MODEL
+↓
+USER INTERFACE & KAFKA PIPELINE
 
-### 2. ML Model
 
-#### Model Training
-- **Algorithm**: Linear Regression
-- **Input**: Processed feature vectors
-- **Output**: Trained model pipeline
+---
 
-#### Model Evaluation
-Metrics used:
-- **RMSE** (Root Mean Square Error)
-- **MAE** (Mean Absolute Error)
-- **R²** (R-Squared)
+# 📂 Project Pipeline
 
-#### Saved Artifacts
-- Pipeline model
-- Linear Regression model
+## 1️⃣ Input Layer
 
-### 3. Kafka Streaming Pipeline
+- Raw dataset: `cab_rides.csv`
 
-#### Kafka Producer
-- Reads from: `ride_features.csv`
-- Sends data to Kafka topic
+---
 
-#### Kafka Broker
-- **Topic**: `cab_price_features`
-- Manages message distribution
+## 2️⃣ Data Preprocessing
 
-#### Kafka Consumer
-- Reads from Kafka stream
-- Parses JSON messages
-- Loads trained models
-- Processes streaming data
-- Predicts prices in real-time
-- Outputs results
+### 🔹 Data Cleaning
+- Remove null values
+- Filter invalid data
 
-### 4. User Interface
+### 🔹 Feature Engineering
+- Datetime extraction
+- Derived features
+- Encoding categorical variables
 
-Interactive web interface for fare predictions:
-1. **User Input Form** - Collects ride details
-2. **Load Models** - Loads pre-trained models
-3. **Process Input** - Transforms user input
-4. **Predict Fare** - Generates fare prediction
-5. **Display Result** - Shows predicted fare
+### 🔹 Pipeline Creation
+Includes:
+- Indexer
+- Encoder
+- Vector Assembler
+- Scaler
 
+---
+
+## 3️⃣ Machine Learning Model
+
+### 🔹 Model Training
+- Algorithm: **Linear Regression**
+
+### 🔹 Model Evaluation
+- RMSE (Root Mean Squared Error)
+- MAE (Mean Absolute Error)
+- R² Score
+
+### 🔹 Model Saving
+- Saved pipeline
+- Saved trained model
+
+---
+
+# 🚀 Deployment & Serving
+
+## 🖥️ User Interface Flow
+
+User Input Form
+↓
+Load Models
+↓
+Process Input
+↓
+Predict Fare
+↓
+Display Result
+
+
+Allows users to manually input ride details and receive predicted fare.
+
+---
+
+## 🔄 Kafka Streaming Pipeline
+
+### 🔹 Kafka Producer
+- Reads: `ride_features.csv`
+- Sends features to Kafka topic: `cab_price_features`
+
+### 🔹 Kafka Broker
+- Manages topic and streaming data
+
+### 🔹 Kafka Consumer
+1. Read Kafka stream
+2. Parse JSON
+3. Load saved model
+4. Process stream
+5. Predict prices
+6. Output results
+
+Enables real-time fare prediction.
+
+---
+
+# 🧠 Tech Stack
+
+- Python
+- Apache Spark (ML Pipeline)
+- Linear Regression
+- Apache Kafka
+- JSON Streaming
+- Scikit-learn / Spark ML (depending on implementation)
+
+---
+
+# 📊 Model Metrics
+
+| Metric | Description |
+|--------|-------------|
+| RMSE   | Measures prediction error magnitude |
+| MAE    | Average absolute error |
+| R²     | Variance explained by the model |
+
+---
+
+# 🛠️ How to Run
+
+## 1️⃣ Train Model
+```bash
+python train_model.py
+2️⃣ Start Kafka
+zookeeper-server-start.sh config/zookeeper.properties
+kafka-server-start.sh config/server.properties
+3️⃣ Start Producer
+python kafka_producer.py
+4️⃣ Start Consumer
+python kafka_consumer.py
+5️⃣ Run UI
+python app.py
+📌 Features
+✅ End-to-end ML pipeline
+✅ Feature engineering automation
+✅ Real-time streaming prediction
+✅ Batch and streaming support
+✅ Modular architecture
