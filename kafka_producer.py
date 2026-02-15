@@ -8,6 +8,9 @@ import time
 # ----------------------------------
 producer = KafkaProducer(
     bootstrap_servers="localhost:9092",
+    retries=5,
+    retry_backoff_ms=100,
+    enable_idempotence=True,
     value_serializer=lambda v: json.dumps(v).encode("utf-8")
 )
 
@@ -29,7 +32,7 @@ for idx, row in df.iterrows():
     producer.send(topic, value=message)
     print(f"📤 Sent row {idx+1}: {message}")
 
-    time.sleep(1)  # simulate streaming delay
+    time.sleep(1)
 
 producer.flush()
 print("✅ All rows sent successfully")
