@@ -76,15 +76,7 @@ Includes:
 
 ## 🖥️ User Interface Flow
 
-User Input Form
-↓
-Load Models
-↓
-Process Input
-↓
-Predict Fare
-↓
-Display Result
+User Input Form → Load Models → Process Input → Predict Fare → Display Result
 
 
 Allows users to manually input ride details and receive predicted fare.
